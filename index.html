@@ -1,543 +1,180 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
+<html lan="en">
+<head>
 
-<html>
-	<head>
-		<title>Directive by HTML5 UP</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-	</head>
-	<style>
+	<meta charset="utf-8">
+	<title>Sharewheels | Book and Give Rides</title>
 
-    .customz{
-		height: 250px;
-		width: 400px;
-	}
-
-	@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css');
-.navi{
-  box-sizing: border-box;
-  margin: 0;  
-  padding: 0;
-  width: 100%;
-  height: 55vh;
-  background-size: cover;
-  background-repeat: no-repeat;
-  opacity: 1;
-  overflow: hidden;
-  background: #fff;
-  transition: 3s;
-
-}
-
-.ulx {
-  list-style-type: none;
-  display: flex;
-  padding: 18px 0;
-  background-size: 400% 400%;
-  background-image: linear-gradient(-45deg, #ff5959, #ff4040, #ff0d6e, #ff8033,#d74177);
-  animation: 12s myGradient infinite;
-  border-radius: 40px;
-  box-shadow: 3px 3px 20px #ff3352;
-  border-top-left-radius: 0px;
-  border-bottom-right-radius: 0px;
-}
-
-@keyframes myGradient {
-  0% {
-    background-position: 0% 50%;
-  }
-  
-  50%{
-    background-position: 100% 50%;
-  }
-  
-  100% {
-    background-position: 0% 50%;
-  }
-}
-
-.fa-search{
-  transition: 1s;
-  cursor: pointer;
-  margin-left: 30px;
-}
-
-.active {
-  transition: 1s;
-}
-
-.active1{
-  transition: 1s;
-}
-
-.active2 {
-  transition: 1s;
-}
-
-.active3 {
-  transition: 1s;
-}
-
-li a {
-  color: #fff;
-  text-decoration: none;
-  padding: 45px 45px;
-  font-family: verdana;
-  font-weight: lighter;
-  font-size: 24px;
-  letter-spacing: 1px;
-  opacity: 0.9;
-}
-
-.navigation {
-  position: absolute;
-  transform: translate(-50%, -50%);
-  top: 50%;
-  left: 50%;
-}
-
-.fa-search:hover {
-  color: #fff;
-  animation: 1.5s myFlash linear infinite;
-  text-shadow: 2px 2px 30px #fff;
-  transition: 2s;
-}
-
-.active3:hover {
-  color: #fff;
-  animation: 1.5s myFlash linear infinite;
-  text-shadow: 2px 2px 30px #fff;
-  transition: 2s;
-  margin-top: -100px;
-}
-
-.active2:hover {
-  color: #fff;
-  animation: 1.5s myFlash linear infinite;
-  text-shadow: 2px 2px 30px #fff;
-  transition: 2s;
-}
-
-.active1:hover {
-  color: #fff;
-  animation: 1.5s myFlash linear infinite;
-  text-shadow: 2px 2px 30px #fff;
-  transition: 2s;
-}
-
-.active:hover {
-  color: #fff;
-  animation: 1.5s myFlash linear infinite;
-  text-shadow: 2px 2px 30px #fff;
-  transition: 2s;
-}
-
-@keyframes myFlash {
-  0% {
-    opacity: 1;
-    text-shadow: transparent;
-  }
-  
-  50% {
-    opacity: .1;
-  }
-  
-  100% {
-    opacity: 1;
-    text-shadow: 2px 2px 20px #fff;
-  }
-}
-
-.line-w5 {
-  width: 5px;
-  height: 200px;
-  background: tomato;
-  position: absolute;
-  transform: translate(-50%, -50%);
-  top: 50%;
-  left: 70%;
-  border-radius: 30px;
-  background-image: linear-gradient(-45deg, #ff408c, #ff4040, #6666ff);
-  background-size: 400% 400%;
-  animation: 13s myBackground infinite;
-  box-shadow: 2px 2px 10px #ff2e38;
-  transition: 3s;
-}
-
-@keyframes myBackground {
-  0% {
-    background-position: 0% 50%;
-    opacity: 0%;
-  }
-  
-  50% {
-    background-position: 100% 50%;
-  }
-  
-  100% {
-    background-position: 0% 50%;
-    opacity: 1;
-  }
-}
+	<!-- Import External files -->
+	<link rel="stylesheet" href="./assets/css/index.css">
 
 
-@keyframes myLinear {
-  0%{
-    width: 50px;
-  }
-  
-  100% {
-    width: 250px;
-  }
-}
+	<!-- Import google fonts -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono&family=Nunito:wght@300;400&family=Open+Sans&family=Russo+One&display=swap" rel="stylesheet">
 
-.flash-GIF {
-  width: 30px;
-  height: 30px;
-  border-radius: 50%;
-  background: #ff5959;
-  position: absolute;
-  transform: translate(-50%, -50%);
-  top: 15%;
-  left: 10%;
-  box-shadow: 2px 2px 20px #d4267d;
-  animation: 1.6s myFlash linear infinite;
-}
+	<!-- Font Awesome -->
+	<script src="https://kit.fontawesome.com/f7187ce1e1.js" crossorigin="anonymous"></script>
+</head>
 
-@keyframes myFlash{
-  0% {
-    opacity: 1;
-  }
-  
-  50%{
-    opacity: .1;
-  }
-  
-  100% {
-    opacity: 1;
-  }
-}
-
-nav {
-  transition: 3s;
-  animation: 3s myAnimation ease linear;
-}
-
-@keyframes myAnimation {
-  0% {
-    opacity: 0;
-  }
-  
-  100% {
-    opacity: 1;
-  }
-}
-
-.nav-type {
-  animation: 3s myWorld ease linear;
-}
-
-@keyframes myWorld {
-  0% {
-    opacity: 0;
-  }
-  
-  100% {
-    opacity: 1;
-  }
-}
-
-@media(max-width: 767px) {
-  .flash-GIF {
-    display: none;
-  }
-  
-  .line-w5 {
-    display: none;
-  }
-  
-  .navigation {
-    position: absolute;
-    transform: translate(-50%, -50%);
-    top: 50%;
-    left: 50%;
-  }
-  
-  .text-content-fluid {
-    position: absolute;
-    transform: translate(-50%, -50%);
-    top: 65%;
-    left: 50%;
-  }
-  
-  .ulx {
-    padding: 15px 0;
-  }
-  
-  
-  li a {
-    padding: 34px 34px;
-    font-size: 23px;
-    font-weight: lighter;
-  }
-  
-  .radial-cyrcle {
-    width: 60px;
-    height: 60px;
-    border-radius: 50%;
-    background: rgb(255, 99, 71);
-    position: absolute;
-    transform: translate(-50%, -50%);
-    top: 70%;
-    left: 50%;
-    box-shadow: 2px 2px 20px #ff3352;
-    background-image: linear-gradient(to top, #ff2657, #ff3333, #ff5900);
-  }
-}
-
-.text-content-fluid {
-  display: flex;
-  position: absolute;
-  transform: translate(-50%, -50%);
-  top: 53%;
-  left: 50%;
-  letter-spacing: 25px;
-  font-size: 50px;
-  font-family: verdana;
-}
-
-
-
-@media(max-width: 767px) {
-  .text-content-fluid {
-    position: absolute;
-    transform: translate(-50%, -50%);
-    left: 50%;
-    top: 60%;
-  }
-}
-
-.line {
-  height: 40px;
-  width: 2px;
-  background: #fff;
-  margin: 0;
-  position: absolute;
-  left: 88%;
-  top: 25%;
-}
-
-
-@keyframes myLineargradient {
-  0% {
-    background-position: 0% 50%;
-    box-shadow: 2px 3px 20px #ff1700;
-  }
-  
-  50% {
-    background-position: 100% 50%;
-     box-shadow: none;
-  }
-  
-  100% {
-    background-position: 0% 50%;
-     box-shadow: 2px 3px 20px #ff1700;
-  }
-}
-
-
-
-
-
-.Active {
-  transition: 2s;
-  margin-top: 1px;
-}
-
-html {
-  scroll-behavior:smooth;
-}
-	</style>
-
-	<script>
-		function myData() {
-  return;
-}
-
-function show() {
-  document.getElementById('anotherFunction').classList.toggle('Active');
-}
-	</script>
-	<body class="is-preload">
-	 <div class="navi">  
-		<div class="html-container">
-			<div class="html-section">
-			  <div class="html-project">
-				<div class="navigation">
-				  <nav>
-					<ul class="nav-type ulx">
-					  <li><a href="#" target="_blank" class="active">Home</a></li>
-					  <li><a href="#" target="_blank" class="active1">Register</a></li>
-					  <li><a href="#" target="_blank" class="active2">Contact</a></li>
-					  <li><a href="#" target="_blank" class="active3">Support</a></li>
-					  <div class="line"></div>
-					  <li><a><i class="fa fa-search" onclick="show()">
-						</i></a></li>
-					</ul>
-				  </nav>
+<body>
+	<div class="navbar">
+		<div id="background"></div>
+		<div class="container">
+			<p id="logo">Share <span>Wheels</span></p>
+			
+			<div class="links">
+				<a href="./about.html">ABOUT US</a>
+				<div id="givetake-buttons">
+					<div id="button-container">
+						<a href="./bookride.html">BOOK</a>
+						<a href="./giveride.html">GIVE</a>
+					</div>
+					<p>RIDE</p>
 				</div>
-			  </div>
-			</div>
-			<noscript>
-			<div class="first-line">
-			  <div class="linear">
-				<div class="line-w5">
-				  
+				<a href="./help.html">HELP</a>
 				</div>
-			  </div>
-			</div>
-			</noscript>
-	  <template>
-			<div class="flash-fluid">
-			  <div class="flash-time">
-				<div class="flash-GIF">
-				  
-				</div>
-			  </div>
-			 </div>
-	  </template>
-	  <noscript>     
-			<div class="cyrcle-center">
-			  <div class="radial-cyrcle">
-				
-			  </div>
-			</div>
-	  </noscript>
-		  </div>
-	  <template>   
-		  <div class="text-class">
-			<div class="text-container">
-			  <div class="text-content-fluid" id="chinese-text" data-text-type="chinese">
-				
-			  </div>
-			</div>
-		  </div>
-	  </template>  
-		  
-		  </div>
-		  </div>  
+		</div>
+	</div>
 
-		<!-- Header -->
-			<div id="header">
-				<span class="logo icon fa-paper-plane"></span>
-				<h1>Hye there, <br>Welcome to Sharewheels</h1>
-				<p>A Community to connect the travellers
-				<br />
-				to their local friends </p>
+	<div class="wallpaper">
+		<img src="./assets/img/wallpaper1.jpg">
+		<p id="message">Just Search, Choose and Go</p>
+		<div class="search-bar">
+			<input type="search" placeholder="Search for places..." style="width: 300px;" onclick="function1()">
+			<button><i class="fas fa-search"></i></button>
+		</div>
+	</div>
+
+	<div class="features">
+		<p id="heading">ShareWheels Features</p>
+		<div class="list">
+			<div id="list-item">
+				<p id="head">Low. Lowest Price</p>
+				<p id="body">
+					Pick price for yourself and compare which takes you to your route at Lowest
+					price. With Sharewheels you have absolute control over you ride.
+				</p>
 			</div>
 
-		<!-- Main -->
-			<div id="main">
+			<div id="list-item">
+				<p id="head">Tust and Security</p>
+				<p id="body">
+					With Sharewheels you an know which driver is most trusted to be with at first
+					place. Sharewheels has a trust level which builds the trust for a driver.
+				</p>
+			</div>
 
-				<header class="major container medium">
-					<h2>Drives That Matter
-					<br />
-					Riders that Support
-					<br />
-					People that Connect</h2>
-					<!--
-					<p>Tellus erat mauris ipsum fermentum<br />
-					etiam vivamus nunc nibh morbi.</p>
-					-->
-				</header>
+			<div id="list-item">
+				<p id="head">Customizeable Rides</p>
+				<p id="body">
+					Sharewheels allow you to find your type of ride. Eithere is Two wheelers, Four
+					or even five! we got you covered. With sharewheels you can select which type of
+					ride you want.
+				</p>
+			</div>
 
-				<div class="box alt container">
-					<section class="feature left">
-						<a href="#" class=""><img src="photograph-clipart-tourist-7.jpg" class="customz" alt="" /></a>
-						<div class="content">
-							<h3><a href="#" class="button">Book A Ride</a></h3>
-							<p>This will contain the booking section for rides. Anyone registered to ShareWheels can apply for the ride with the specific destination, date and time.</p>
-						</div>
-					</section>
-					<section class="feature right">
-						<a href="#" class=""><img src="Screenshot (167).png" class="customz" alt="" /></a>
-						<div class="content">
-							<h3><a href="#" class="button">Give Someone Ride</a></h3>
-							<p>People can also apply to volunter to give rides to people in need and share it with the followers in the application too.</p>
-						</div>
-					</section>
-					<section class="feature left">
-						<a href="#" class=""><img src="comm.jpeg" class="customz" alt="" /></a>
-						<div class="content">
-							<h3><a href="#" class="button">Join A Community</a></h3>
-							<p>You can join communities of similar interests and make it easier and discoverable for others. Also its a great way to know more people around your area.</p>
-						</div>
-					</section>
+			<div id="list-item">
+				<p id="head">Community Driven</p>
+				<p id="body">
+					ShareWheels is Community Driven. You can also be a part of one. Communities help
+					us to build and bring together.
+				</p>
+			</div>
+		</div>
+	</div>
+
+	<!-- Poster -->
+	<div class="poster">
+		<img src="./assets/img/poster.png">
+		<p>Build Around Community.</p>
+	</div>
+
+
+	<!-- About -->
+	<div class="about">
+		<p id="logo">Share <span>Wheels</span></p>
+		<p id="body">
+			ShareWheels is not just a organization but a individual will for social work to help
+			those in need. Do I need to write more about It here? 'cauze I dont know much about 
+			it. Better If you do it.
+		</p>
+	</div>
+
+	
+	<!-- Reviews -->
+	<div class="reviews">
+		<p id="heading">Read Reviews from our Users</p>
+		<div class="item-list">
+			<div class="review-item fade-item">
+				<img src="./assets/img/reviews/1.jpg">
+				<p id="body"><span>User Name</span>Review of "User Name". and its good.</p>
+			</div>
+
+			<div class="review-item fade-item">
+				<img src="./assets/img/reviews/2.jpg">
+				<p id="body"><span>User Name</span>Review of "User Name". and its good.</p>
+			</div>
+
+			<div class="review-item fade-item">
+				<img src="./assets/img/reviews/3.jpg">
+				<p id="body"><span>User Name</span>Review of "User Name". and its good.</p>
+			</div>
+
+			<button id="button-left" onclick="nextEvent(-1)"><i class="fas fa-chevron-left"></i></i></button>
+			<button id="button-right" onclick="nextEvent(1)"><i class="fas fa-chevron-right"></i></button>
+
+		</div>
+	</div>
+
+
+	<!-- Footer -->
+	<div class="footer">
+		<div class="left">
+			<div class="links">
+				<div id="links-row">
+					<p id="head">About</p>
+					<a href="about">About</a>
+					<a href="help">Orignals</a>
+					<a href="help">Documentation</a>
 				</div>
 
-				
+				<div id="links-row">
+					<p id="head">Navigation</p>
+					<a href="about">Sharewheels</a>
+					<a href="help">Contacts</a>
+					<a href="help"></a>
+				</div>
 
-				<footer class="major container medium">
-					<h3>Take the First Step</h3>
-					<p>Join us in connecting people from the foundations.</p>
-					<ul class="actions special">
-						<li><a href="#" class="button">Join ShareWheels</a></li>
-					</ul>
-				</footer>
-
-			</div>
-
-		<!-- Footer -->
-			<div id="footer">
-				<div class="container medium">
-
-					<header class="major last">
-						<h2>Questions or comments?</h2>
-					</header>
-
-					<p>You can Contact Directly to the Creators.</p>
-
-					<form method="post" action="#">
-						<div class="row">
-							<div class="col-6 col-12-mobilep">
-								<input type="text" name="name" placeholder="Name" />
-							</div>
-							<div class="col-6 col-12-mobilep">
-								<input type="email" name="email" placeholder="Email" />
-							</div>
-							<div class="col-12">
-								<textarea name="message" placeholder="Message" rows="6"></textarea>
-							</div>
-							<div class="col-12">
-								<ul class="actions special">
-									<li><input type="submit" value="Send Message" /></li>
-								</ul>
-							</div>
-						</div>
-					</form>
-
-					<ul class="icons">
-						<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
-						<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
-						<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
-						<li><a href="#" class="icon brands fa-github"><span class="label">Github</span></a></li>
-						<li><a href="#" class="icon brands fa-dribbble"><span class="label">Dribbble</span></a></li>
-					</ul>
-
-					<ul class="copyright">
-						<li>&copy; ShareWheels. All rights reserved.</li>
-					</ul>
-
+				<div id="links-row">
+					<p id="head">Help</p>
+					<a href="about">Help Manual</a>
+					<a href="help">How to Booka Ride?</a>
+					<a href="help">Documentation</a>
 				</div>
 			</div>
+		</div>
 
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
+		<div class="right">
+			<div id="moto">
+				<p>Drives that Matter.</p>
+				<p>Riders that Support.</p>
+				<p>People that Connect.</p>
+			</div>
+			<div id="socialmedia">
+				<a href="link to insta"><i class="fab fa-instagram"></i></a>
+				<a href="link to twritter"><i class="fab fa-twitter"></i></a>
+				<a href="link to discord"><i class="fab fa-discord"></i></a>
+			</div>
+		</div>
+	</div>
+	<div class="footer-end">
+		<p>Copyright 2023 and that C icon.</p>
+		<a href="IDK">Terms and Conditions</a>
+	</div>
 
-	</body>
+	<script src="./assets/js/index.js"></script>
+
+</body>
 </html>
