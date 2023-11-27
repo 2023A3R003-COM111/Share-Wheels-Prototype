@@ -18,7 +18,7 @@ Are we really sharing wheels or what?
 - [ ] **Give a Ride** page.
 - [ ] Contact Page.
 - [ ] Help Page | Documents  **Gotta do it no matter what and it must be easy to ready, reach and understand*
-- [ ] Making Login algo. work... somehow! (does we even need login!? IDK).
+- [ ] Making Login algo. work... somehow! (yes we need one).
 - [ ] Need new, original logo for the project.
 - [ ] Standardize the media.
 - [ ] Last Code Check.
