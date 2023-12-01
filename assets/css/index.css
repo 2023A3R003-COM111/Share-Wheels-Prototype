@@ -146,6 +146,10 @@ button{
 .wallpaper .search-bar {
 	position: absolute;
 	top: 50%;
+	width: 400px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
 	overflow: hidden;
 	transform: translateY(-50%);
 	background-color: #272727;
@@ -158,7 +162,7 @@ button{
 .wallpaper .search-bar input {
 	all: unset;
 	font-size: 16px;
-	margin: 10px 15px;
+	margin-left: 15px;
 	background-color: #282828;
 	color: white;
 }
@@ -168,9 +172,10 @@ button{
 
 .wallpaper .search-bar button {
 	all: unset;
+	width: 50px;
 	color: #ffffff;
 	background-color: #cc6a14;
-	width: 45px;
+
 	height: 40px;
 	text-align: center;
 }
