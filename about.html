@@ -7,6 +7,7 @@
 
 	<!-- Import External files -->
 	<link rel="stylesheet" href="./assets/css/index.css">
+	<link rel="stylesheet" href="./assets/css/about.css">
 
 
 	<!-- Import google fonts -->
@@ -17,7 +18,6 @@
 	<!-- Font Awesome -->
 	<script src="https://kit.fontawesome.com/f7187ce1e1.js" crossorigin="anonymous"></script>
 </head>
-
 <body>
 	<div class="navbar">
 		<div id="background"></div>
@@ -26,24 +26,34 @@
 			
 			<div class="links">
                 <a href="./index.html">HOME</a>
-				<a href="./about.html">ABOUT US</a>
+				<a id="current" href="./about.html">ABOUT US</a>
 				<div id="givetake-buttons">
 					<div id="button-container">
 						<a href="./bookride.html">BOOK</a>
-						<a id="current" href="./giveride.html">GIVE</a>
+						<a href="./giveride.html">GIVE</a>
 					</div>
 					<p>RIDE</p>
 				</div>
 				<a href="./help.html">HELP</a>
 				</div>
-				<div class="login">
-					<a href="signup.html">Login<span><i class="fas fa-chevron-down"></i></span></a>
-					<div class="login-menu">
-						<p> Don't have accout? create one</p>
-						<a href="signup">Create Account</a>
-					</div>
+			<div class="login">
+				<a href="signup.html">Login<span><i class="fas fa-chevron-down"></i></span></a>
+				<div class="login-menu">
+					<p> Don't have accout? create one</p>
+					<a href="signup">Create Account</a>
 				</div>
+			</div>
 		</div>
+	</div>
+
+	<div class="wallpaper">
+		<img src="./assets/img/about.png">
+		<!-- <p id="logo">Share <span>Wheels</span></p> -->
+        <p id="moto">
+            <span>Drives that Matter.</span>
+            <span>Riders that Support.</span>
+            <span>People that Connect.</span>
+        </p>
 	</div>
 
 	<!-- Footer -->
@@ -90,6 +100,5 @@
 		<p>Copyright 2023 and that C icon.</p>
 		<a href="IDK">Terms and Conditions</a>
 	</div>
-
 </body>
 </html>

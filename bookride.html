@@ -26,17 +26,24 @@
 			<p id="logo">Share <span>Wheels</span></p>
 			
 			<div class="links">
-                <a href="index.html">HOME</a>
+                <a href="./index.html">HOME</a>
 				<a href="./about.html">ABOUT US</a>
 				<div id="givetake-buttons">
 					<div id="button-container">
-						<a href="./bookride.html">BOOK</a>
+						<a id="current" href="./bookride.html">BOOK</a>
 						<a href="./giveride.html">GIVE</a>
 					</div>
 					<p>RIDE</p>
 				</div>
 				<a href="./help.html">HELP</a>
 				</div>
+                <div class="login">
+                    <a href="signup.html">Login<span><i class="fas fa-chevron-down"></i></span></a>
+                    <div class="login-menu">
+                        <p> Don't have accout? create one</p>
+                        <a href="signup">Create Account</a>
+                    </div>
+                </div>
 		</div>
 	</div>
 
@@ -56,7 +63,7 @@
                 <input type="search" placeholder="Search for places..." style="width: 300px;" onclick="function1()">
                 <button><i class="fas fa-search"></i></button>
             </div>
-            <p id="head">Sort By</p>
+            <p id="head">Short By</p>
             <div class="price">
                 <input id="range-slider" type="range">
                 <div id="price-range">
@@ -73,7 +80,7 @@
                     <img src="./assets/img/users/1.png">
                     <p id="name">Harish Kashyap</p>
                     <p id="user-points"><i class="fas fa-star"></i> <span>20</span></p>
-                    <p id="message"><i class="far fa-comment-dots"></i></p>
+                    <a href="https://wa.me/9909099909" target="_blank" id="message"><i class="fab fa-whatsapp"></i></a>
                 </div>
 
                 <div class="right">
@@ -98,7 +105,7 @@
                     <img src="./assets/img/users/2.png">
                     <p id="name">Saksham Jamwal</p>
                     <p id="user-points"><i class="fas fa-star"></i> <span>8</span></p>
-                    <p id="message"><i class="far fa-comment-dots"></i></p>
+                    <a href="https://wa.me/9909099909" target="_blank" id="message"><i class="fab fa-whatsapp"></i></a>
                 </div>
 
                 <div class="right">
@@ -123,7 +130,7 @@
                     <img src="./assets/img/users/3.png">
                     <p id="name">Nitish</p>
                     <p id="user-points"><i class="fas fa-star"></i> <span>20</span></p>
-                    <p id="message"><i class="far fa-comment-dots"></i></p>
+                    <a href="https://wa.me/9909099909" target="_blank" id="message"><i class="fab fa-whatsapp"></i></a>
                 </div>
 
                 <div class="right">
@@ -169,7 +176,7 @@
 				<div id="links-row">
 					<p id="head">Help</p>
 					<a href="about">Help Manual</a>
-					<a href="help">How to Book a Ride?</a>
+					<a href="help">How to Booka Ride?</a>
 					<a href="help">Documentation</a>
 				</div>
 			</div>
@@ -192,8 +199,6 @@
 		<p>Copyright 2023 and that C icon.</p>
 		<a href="IDK">Terms and Conditions</a>
 	</div>
-
-	<script src="./assets/js/index.js"></script>
 
 </body>
 </html>
