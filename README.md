@@ -13,12 +13,11 @@ Are we really sharing wheels or what?
 
 
 ## ToDo
-- [ ] Creating Home Page.
-- [ ] **Book a Ride** page.
-- [ ] **Give a Ride** page.
+- [ ] Creating Give Ride Page.
+- [ ] embedding discord server
 - [ ] Contact Page.
-- [ ] Help Page | Documents  **Gotta do it no matter what and it must be easy to ready, reach and understand*
-- [ ] Making Login algo. work... somehow! (does we even need login!? IDK).
-- [ ] Need new, original logo for the project.
-- [ ] Standardize the media.
+- [ ] Answers to FAQs
+- [ ]Login backend setup
+- [ ] Logo fix
+- [ ] shifting to react
 - [ ] Last Code Check.
