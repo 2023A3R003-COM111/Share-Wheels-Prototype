@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -65,4 +65,51 @@
    <script src="./backend-setup-signup-page/node_modules/mysqlsignup.js"></script>
     <script src="./assets/js/signup.js"></script>
 </body>
+</html> -->
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>SignUp/LogIn</title>
+        <!-- Cool Google Fonts -->
+        <script src="https://www.gstatic.com/firebasejs/10.7.1/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/10.7.1/firebase-auth.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/10.7.1/firebase-database.js"></script>
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Bowlby+One+SC&display=swap" rel="stylesheet">
+        <!-- Our stylesheet -->
+        <link rel="stylesheet" type="text/css" href="./assets/css/index1.css">
+    </head>
+    <body>
+        <div id="content_container">
+            <div id="form_container">
+                <div id="form_header_container">
+                    <h2 id="form_header"> SignUp/LogIn</h2>
+                </div>
+
+                <div id="form_content_container">
+                    <div id="form_content_inner_container">
+                        <input type="text" id="user_name" placeholder="Username">
+                        <input type="email" id="email" placeholder="Email">
+                        <input type="password" id="password" placeholder="New Password">
+
+                        <input type="number" id="contact_no" placeholder="contact no.">
+                        
+
+                        <div id="button_container">
+                            <button type="submit" onclick="login()">Login</button>
+                            <button type="submit" onclick="register()">Register</button>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+    <!-- Our script must be loaded after firebase references -->
+    <script src="./assets/js/index1.js"></script>
+
 </html>
