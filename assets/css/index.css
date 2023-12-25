@@ -270,7 +270,82 @@ body {
 	background-color: #ee862c;
 	transition: 0.3s;
 }
-
+.slideshow {
+	list-style-type: none;
+  
+  }
+  
+  /** SLIDESHOW **/
+  .slideshow,
+  .slideshow:after { 
+	  top: -16px; /*Not sure why I needed this fix*/
+		  position: cover;
+	  width: 100%;
+	  height: 100%;
+	  left: 0px;
+	  z-index: 0; 
+  }
+  
+  .slideshow li div { 
+		  position: absolute;
+	  width: 100%;
+	  height: 100%;
+	  top: 0px;
+	  left: 0px;
+	  color: transparent;
+	  background-size: cover;
+	  background-position: 50% 50%;
+	  background-repeat: no-repeat;
+	  opacity: 0;
+	  z-index: 0;
+	  animation: imageAnimation 30s linear infinite 0s; 
+  }
+  
+  
+  
+  .slideshow li:nth-child(1) div { 
+	  background-image: url("/assets/img/maxresdefault\ \(1\).jpg"); 
+  }
+  .slideshow li:nth-child(2) div { 
+	  background-image: url("/assets/img/maxresdefault\ \(2\).jpg");
+	  animation-delay: 6s; 
+  }
+  .slideshow li:nth-child(3) div { 
+	  background-image: url("/assets/img/summer-sunset-friends-holiday-wallpaper-3554x1999_53.jpg");
+	  animation-delay: 12s; 
+  }
+  .slideshow li:nth-child(4) div { 
+	  background-image: url("/assets/img/van-ov-1920x1080.jpg");   
+	  animation-delay: 18s; 
+  }
+  .slideshow li:nth-child(5) div { 
+	  background-image: url("/assets/img/leo-kumo-dusk-corrected-resize.jpg");
+	  animation-delay: 24s; 
+  }
+  
+  
+  
+  @keyframes imageAnimation { 
+	  0% { opacity: 0; animation-timing-function: ease-in; }
+	  8% { opacity: 1; animation-timing-function: ease-out; }
+	  17% { opacity: 1 }
+	  25% { opacity: 0 }
+	  100% { opacity: 0 }
+  }
+  
+  
+  @keyframes titleAnimation { 
+	  0% { opacity: 0 }
+	  8% { opacity: 1 }
+	  17% { opacity: 1 }
+	  19% { opacity: 0 }
+	  100% { opacity: 0 }
+  }
+  
+  
+  .no-cssanimations .cb-slideshow li div {
+	  opacity: 1;
+  }
 
 
 /* Features of Sharewheels */
