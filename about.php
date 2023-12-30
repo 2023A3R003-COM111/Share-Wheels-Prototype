@@ -25,12 +25,12 @@
 			<p id="logo">Share <span>Wheels</span></p>
 			
 			<div class="links">
-                <a href="./index.html">HOME</a>
+                <a href="./index.php">HOME</a>
 				<a id="current" href="./about.html">ABOUT US</a>
 				<div id="givetake-buttons">
 					<div id="button-container">
-						<a href="./bookride.html">BOOK</a>
-						<a href="./giveride.html">GIVE</a>
+						<a href="./bookride.php">BOOK</a>
+						<a href="./giveride.php">GIVE</a>
 					</div>
 					<p>RIDE</p>
 				</div>

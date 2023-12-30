@@ -25,19 +25,19 @@
 			<p id="logo">Share <span>Wheels</span></p>
 			
 			<div class="links">
-				<a id="current" href="./index.html">HOME</a>
-				<a href="./about.html">ABOUT US</a>
+				<a id="current" href="./index.php">HOME</a>
+				<a href="./about.php">ABOUT US</a>
 				<div id="givetake-buttons">
 					<div id="button-container">
-						<a href="./bookride.html">BOOK</a>
-						<a href="./giveride.html">GIVE</a>
+						<a href="./bookride.php">BOOK</a>
+						<a href="./giveride.php">GIVE</a>
 					</div>
 					<p>RIDE</p>
 				</div>
-				<a href="./faq.html">HELP</a>
+				<a href="./faq.php">HELP</a>
 			</div>
 			<div class="login">
-				<a href="signup.html">Login<span><i class="fas fa-chevron-down"></i></span></a>
+				<a href="signup.php">Login<span><i class="fas fa-chevron-down"></i></span></a>
 				<div class="login-menu">
 					<p> Don't have accout? create one</p>
 					<a href="signup">Create Account</a>
